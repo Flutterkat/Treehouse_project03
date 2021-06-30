@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" href="css/styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width,  initial-scale=1">
+            <title>The Code Review: Newsletter Sign-up</title>
+        </head>
+
+    <body>
+        <main>
+            <h1>The Code Review</h1>
+            <form action="index.html" method="post">
+                <!--Form Heading-->
+                <section class="form-heading">
+                    <h2>Signup for our newsletter</h2>
+                    <p>Get the latest news on how your code is doing right in your inbox</p>
+                </section>
+                
+
+                <!--Contact information-->
+                <fieldset class="contact-information">
+                    
+                    <legend><h2>Contact Information</h2></legend>
+                    
+                    <div class="wrap">
+                    <div class="div-wrap">
+                        <div class="fix"><label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required" required></div>
+                        
+                        <div class="fix"><label for="email">Email Address</label>
+                        <input type="text" id="email" name="user_email" placeholder="Required" required></div>
+
+                        <div class="fix"><label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user_phone" placeholder="Phone Number"></div>
+
+                        <div class="fix"><label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address" placeholder="Address"></div>
+
+                        <div class="fix"><label for="city">City</label>
+                        <input type="text" id="city" name="user_city" placeholder="city"></div>
+
+                        <div class="fix"><label for="state">State</label>
+                        <select id="state" name="user_state">
+                                <option disabled hidden selected>Select State</option>
+                            <option value="alabama">alabama</option>
+                            <option value="alaska">alaska</option>
+                            <option value="arizona">arizona</option>
+                            <option value="arkansas">arkansas</option>
+                            <option value="california">california</option>
+                            <option value="colorado">colorado</option>
+                            <option value="connecticut">connecticut</option>
+                            <option value="delaware">delaware</option>
+                            <option value="florida">florida</option>
+                            <option value="georgia">georgia</option>
+                            <option value="hawaii">hawaii</option>
+                            <option value="idaho">idaho</option>
+                            <option value="illinois">illinois</option>
+                            <option value="indiana">indiana</option>
+                            <option value="iowa">indiana</option>
+                            <option value="kansas">kansas</option>
+                            <option value="kentucky">kentucky</option>
+                            <option value="louisiana">louisiana</option>
+                            <option value="maine">maine</option>
+                            <option value="maryland">maryland</option>
+                            <option value="massachusetts">massachusetts</option>
+                            <option value="michigan">michigan</option>
+                            <option value="minnesota">minnesota</option>
+                            <option value="mississippi">mississippi</option>
+                            <option value="missouri">missouri</option>
+                            <option value="montana">montana</option>
+                            <option value="nebraska">nebraska</option>
+                            <option value="nevada">nevada</option>
+                            <option value="new hampshire">new hampshire</option>
+                            <option value="new jersey">new jersey</option>
+                            <option value="new mexico">new mexico</option>
+                            <option value="new york">new york</option>
+                            <option value="north carolina">north carolina</option>
+                            <option value="north dakota">north dakota</option>
+                            <option value="ohio">ohio</option>
+                            <option value="oklahoma">oklahoma</option>
+                            <option value="oregon">oregon</option>
+                            <option value="pennsylvania">pennsylvania</option>
+                            <option value="rhode island">rhode island</option>
+                            <option value="south carolina">south carolina</option>
+                            <option value="south dakota">south dakota</option>
+                            <option value="tennessee">tennessee</option>
+                            <option value="texas">texas</option>
+                            <option value="utah">utah</option>
+                            <option value="vermont">vermont</option>
+                            <option value="virginia">virginia</option>
+                            <option value="washington">washington</option>
+                            <option value="west virginia">west virginia</option>
+                            <option value="wisconsin">wisconsin</option>
+                            <option value="wyoming">wyoming</option>
+                            </select></div>
+
+                            <div class="zip-fix"><label for="zip">Zip</label>
+                        <input type="text" id="zip" name="user_zip" placeholder="Zip code"></div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                
+                <fieldset class="newsletter">
+                    <section class="wrap">
+                        <h2>Newsletter</h2>
+                        <p class="news-letter-fix">Select the newsletter you would like to receive</p>
+
+                        <input type="checkbox" id="html_news" value="html_news" name="html_news">
+                        <label for="html_news" class="checkbox_label">HTML News</label><br>
+
+                        <input type="checkbox" id="css_news" value="css_news" name="css_news">
+                        <label for="css_news" class="checkbox_label">CSS News</label><br>
+
+                        <input type="checkbox" id="java_news" value="java_news" name="java_news">
+                        <label for="java_news" class="checkbox_label">javascript News</label>
+
+                        <p class="news-letter-fix">Newsletter Format</p>
+
+                        <input type="radio" id="html_format" value="html_format" name="format">
+                        <label for="html_format" class="checkbox_label">HTML</label><br>
+
+                        <input type="radio" id="text_format" value="text_format" name="format">
+                        <label for="text_format" class="checkbox_label">Plain Text</label>
+                    </section>
+                </fieldset>
+
+                <fieldset class="other">
+                    <div class="wrap">
+                        <label for="text_box">Other topics you'd like to hear about</label>
+                        <input id="text_box" name="other_topics" placeholder="Additional topic requests">
+
+                        <button type="submit" class="button">Sign Up</button>
+                    </div>
+                </fieldset>
+                
+
+            </form>
+        </main>
+    
+        <footer>
+            <p class="footer_text">Copyright The Code Review</p>
+        </footer>
+    </body>
+</html>
