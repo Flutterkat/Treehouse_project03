@@ -25,15 +25,15 @@ input:focus, button:focus, select:focus {
 }
 
 .wrap {
-    margin: 15px;
+    margin: 10px;
 }
 
-main {
+body {
     background-color:gainsboro;
 }
 
 /*--Main--*/
-.form-heading h2, p:not(.news-letter-fix), h1 {
+.form-heading h2, p:not(.news-letter-fix, .news-letter-fix-2), h1 {
     text-align: center;
 }
 
@@ -67,7 +67,7 @@ fieldset {
     border-bottom: none;
 }
 
-input, .other {
+input, .other, textarea {
     border: none;
 }
 
@@ -88,17 +88,17 @@ label {
     color: black;
 }
 
-input, select, button {
+input, select, button, textarea {
     width: 100%;
     border-radius: 5px;
 }
 
-input, select {
+input, select, textarea {
     height: 3em;
     background-color: rgba(114, 214, 214, 0.671)
 }
 
-input, select {
+input, select, textarea {
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -123,8 +123,12 @@ input[id="zip"] {
     padding-top: 10px;
 }
 
-.newsletter p {
-    padding: 20px 0;
+.news-letter-fix {
+    padding: 0px 0 10px;
+}
+
+.news-letter-fix-2 {
+    padding: 20px 0 10px;
 }
 
 .checkbox_label {
@@ -138,7 +142,7 @@ input[type="checkbox"], input[type="radio"] {
     vertical-align: middle;
 }
 
-input[id="text_box"] {
+textarea {
     height: 5em;
     margin-top: 10px;
 }
